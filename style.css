@@ -83,36 +83,75 @@ body {
    "cursor-dot" = inner dot | "cursor-ring" = outer ring
    ============================================================ */
 .cursor-dot {
-  width: 8px; height: 8px;
-  background: var(--accent-blue);
+  width: 10px;
+  height: 10px;
+  background: #ff1e1e;
   border-radius: 50%;
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   pointer-events: none;
   z-index: 99999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s var(--ease), background 0.2s;
-  box-shadow: 0 0 10px var(--accent-blue), 0 0 20px var(--glow-blue);
+  transition: transform 0.08s ease, background 0.3s;
+  box-shadow:
+    0 0 10px #ff1e1e,
+    0 0 25px rgba(255, 30, 30, 0.8),
+    0 0 45px rgba(255, 30, 30, 0.4);
+  animation: cursorPulse 1.8s infinite;
 }
 
 .cursor-ring {
-  width: 36px; height: 36px;
-  border: 1.5px solid rgba(59,130,246,0.5);
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(255, 30, 30, 0.6);
   border-radius: 50%;
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   pointer-events: none;
   z-index: 99998;
   transform: translate(-50%, -50%);
-  transition: width 0.3s var(--ease-bounce), height 0.3s var(--ease-bounce),
-              border-color 0.2s, background 0.2s, transform 0.12s var(--ease);
+  transition:
+    width 0.25s ease,
+    height 0.25s ease,
+    border-color 0.25s,
+    background 0.25s,
+    transform 0.12s ease;
+  box-shadow:
+    0 0 15px rgba(255, 30, 30, 0.4),
+    inset 0 0 10px rgba(255, 30, 30, 0.2);
 }
 
 /* Cursor expands on hover over links/buttons */
+
 body.cursor-hover .cursor-ring {
-  width: 56px; height: 56px;
-  border-color: var(--accent-blue);
-  background: rgba(59,130,246,0.08);
+  width: 70px;
+  height: 70px;
+  border-color: #ff1e1e;
+  background: rgba(255, 30, 30, 0.08);
+  box-shadow:
+    0 0 25px rgba(255, 30, 30, 0.6),
+    0 0 60px rgba(255, 30, 30, 0.3);
+}
+
+/* Cursor pulse animation */
+@keyframes cursorPulse {
+  0% {
+    box-shadow:
+      0 0 10px #ff1e1e,
+      0 0 25px rgba(255, 30, 30, 0.6);
+  }
+  50% {
+    box-shadow:
+      0 0 18px #ff1e1e,
+      0 0 40px rgba(255, 30, 30, 0.9);
+  }
+  100% {
+    box-shadow:
+      0 0 10px #ff1e1e,
+      0 0 25px rgba(255, 30, 30, 0.6);
+  }
 }
 
 /* ── Scroll Progress Bar ── */
