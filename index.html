@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- =============================================
+       SEO META TAGS
+       HOW TO UPDATE: Change the content="" values below.
+       ============================================= -->
+  <title>Bisham Silwal — Database Administrator | SQL Server | IT Support Specialist</title>
+  <meta name="description" content="Bisham Silwal is a professional Database Administrator, SQL Server Specialist, and IT Support professional at Sun Nepal Life Insurance, Kathmandu." />
+  <meta name="keywords" content="Bisham Silwal, Database Administrator, SQL Server, Nepal, Sun Nepal Life Insurance, IT Support, DBA" />
+  <meta name="author" content="Bisham Silwal" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bishamsilwal.com.np/" />
+
+  <!-- Open Graph (for Facebook/LinkedIn sharing) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Bisham Silwal — Database Administrator" />
+  <meta property="og:description" content="Professional portfolio of Bisham Silwal — Database Administration, SQL Server, IT Support in Nepal." />
+  <meta property="og:url"         content="https://bishamsilwal.com.np/" />
+  <meta property="og:image"       content="https://bishamsilwal.com.np/assets/profile.jpg" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Bisham Silwal — Database Administrator" />
+  <meta name="twitter:description" content="Professional portfolio of Bisham Silwal." />
+  <meta name="twitter:image"       content="https://bishamsilwal.com.np/assets/profile.jpg" />
+
+  <!-- Structured Data (JSON-LD) for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bisham Silwal",
+    "jobTitle": "Database Administrator",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Sun Nepal Life Insurance"
+    },
+    "url": "https://bishamsilwal.com.np",
+    "sameAs": [
+      "https://www.linkedin.com/in/bishamsilwal",
+      "https://github.com/bishamsilwal"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+  </script>
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💾</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Custom Cursor ── -->
+  <div class="cursor-dot"  id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ── Scroll Progress ── -->
+  <div id="scroll-progress"></div>
+
+  <!-- ── Scroll to Top ── -->
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- ============================================================
+       LOADING SCREEN
+       Automatically hides after 2 seconds.
+       ============================================================ -->
+  <div id="loader">
+    <div class="loader-logo">BS.</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- ── Animated background shapes ── -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+  <div class="bg-shape bg-shape-3"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       HOW TO UPDATE LINKS: Edit the <a href="..."> tags below.
+       ============================================================ -->
+  <nav>
+    <a href="index.html" class="nav-logo">BS.</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <!-- Update href to your actual email -->
+      <li><a href="mailto:bisham.silwal@example.com" class="nav-cta">Hire Me</a></li>
+    </ul>
+
+    <button class="nav-hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       HOW TO UPDATE:
+       - Profile image: replace assets/profile.jpg
+       - Name: change the h1 text
+       - Typing texts: update data-texts array
+       - Buttons: update href values
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name reveal">
+          Bisham<br />
+          <span class="text-gradient">Silwal.</span>
+        </h1>
+
+        <!-- Typing animation — update titles in data-texts -->
+        <div class="hero-typing reveal reveal-delay-1">
+          <span id="typing-text"
+            data-texts='["Database Administrator","SQL Server Specialist","Website Content Manager","IT Support Specialist","Performance Tuning Expert"]'
+          ></span>
+          <span class="typing-cursor"></span>
+        </div>
+
+        <!-- Current organisation -->
+        <div class="hero-org reveal reveal-delay-2">
+          <span class="hero-org-dot"></span>
+          <span>Currently at <strong>Sun Nepal Life Insurance</strong>, Kathmandu</span>
+        </div>
+
+        <p class="hero-desc reveal reveal-delay-3">
+          A results-driven IT professional specializing in database administration, SQL Server management, 
+          and enterprise IT support. Committed to optimizing data infrastructure and ensuring seamless 
+          system performance for critical business operations.
+        </p>
+
+        <!-- Call-to-action buttons — update href values -->
+        <div class="hero-buttons reveal reveal-delay-4">
+          <a href="portfolio.html" class="btn btn-primary">View My Work →</a>
+          <a href="resume.html"    class="btn btn-outline">Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Profile Image — replace assets/profile.jpg with your photo -->
+      <div class="hero-image-wrap reveal">
+        <div class="hero-image-ring">
+          <div class="hero-image-inner">
+            <!-- HOW TO REPLACE IMAGE: Change src="assets/profile.jpg" -->
+            <img src="assets/profile.jpg" alt="Bisham Silwal"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero-img-placeholder" style="display:none;">BS</div>
+          </div>
+        </div>
+
+        <!-- Floating info cards -->
+        <div class="hero-float-card">
+          <strong>5+</strong> Years Experience
+        </div>
+        <div class="hero-float-card">
+          <strong>SQL</strong> Server Expert
+        </div>
+        <div class="hero-float-card">
+          <strong>DBA</strong> Certified
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATISTICS — Animated Counters
+       HOW TO UPDATE: Change data-target and data-suffix values.
+       ============================================================ -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card glass-card reveal">
+        <span class="stat-number counter" data-target="5" data-suffix="+">0+</span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat-card glass-card reveal reveal-delay-1">
+        <span class="stat-number counter" data-target="30" data-suffix="+">0+</span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat-card glass-card reveal reveal-delay-2">
+        <span class="stat-number counter" data-target="15" data-suffix="+">0+</span>
+        <span class="stat-label">Technologies Used</span>
+      </div>
+      <div class="stat-card glass-card reveal reveal-delay-3">
+        <span class="stat-number counter" data-target="8" data-suffix="+">0+</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED SKILLS
+       HOW TO ADD A SKILL: Copy a .skill-card block and update content.
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label reveal">Core Competencies</span>
+      <h2 class="section-title reveal reveal-delay-1">Featured <span>Skills</span></h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        Specialized expertise in database management, system administration, and enterprise IT solutions.
+      </p>
+
+      <div class="skills-grid">
+
+        <!-- Skill 1 -->
+        <div class="skill-card glass-card reveal">
+          <span class="skill-icon">🗄️</span>
+          <div class="skill-name">SQL Server Administration</div>
+          <div class="skill-desc">Install, configure, and manage SQL Server instances with high availability and security.</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="92%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card glass-card reveal reveal-delay-1">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">Performance Tuning</div>
+          <div class="skill-desc">Query optimization, index strategies, and execution plan analysis for maximum throughput.</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="88%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card glass-card reveal reveal-delay-2">
+          <span class="skill-icon">🔒</span>
+          <div class="skill-name">Database Security</div>
+          <div class="skill-desc">Role-based access control, data encryption, auditing, and compliance management.</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="85%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card glass-card reveal reveal-delay-3">
+          <span class="skill-icon">💾</span>
+          <div class="skill-name">Backup & Recovery</div>
+          <div class="skill-desc">Comprehensive backup strategies and disaster recovery planning with minimal RTO/RPO.</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="90%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card glass-card reveal">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-name">Website Management</div>
+          <div class="skill-desc">Content management, SEO optimization, and website performance monitoring.</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="80%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card glass-card reveal reveal-delay-1">
+          <span class="skill-icon">🖥️</span>
+          <div class="skill-name">IT Support</div>
+          <div class="skill-desc">End-user support, hardware/software troubleshooting, and IT infrastructure management.</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-fill" data-width="87%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROFESSIONAL HIGHLIGHTS
+       HOW TO ADD/EDIT: Duplicate a .highlight-card and update.
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label reveal">Why Choose Me</span>
+      <h2 class="section-title reveal reveal-delay-1">Professional <span>Highlights</span></h2>
+
+      <div class="highlights-grid">
+
+        <div class="highlight-card glass-card reveal">
+          <div class="highlight-icon">🏆</div>
+          <div class="highlight-title">Enterprise Database Management</div>
+          <div class="highlight-desc">
+            Managed and optimized mission-critical databases at Sun Nepal Life Insurance, ensuring 99.9% uptime
+            for insurance policy and claims systems.
+          </div>
+        </div>
+
+        <div class="highlight-card glass-card reveal reveal-delay-1">
+          <div class="highlight-icon">📊</div>
+          <div class="highlight-title">Performance Optimization Leader</div>
+          <div class="highlight-desc">
+            Reduced query execution times by up to 60% through advanced indexing strategies, query rewrites, 
+            and execution plan analysis.
+          </div>
+        </div>
+
+        <div class="highlight-card glass-card reveal reveal-delay-2">
+          <div class="highlight-icon">🎓</div>
+          <div class="highlight-title">Dual Academic Excellence</div>
+          <div class="highlight-desc">
+            MBA graduate combined with a Bachelor's in Information Technology — bridging the gap between 
+            business strategy and technical implementation.
+          </div>
+        </div>
+
+        <div class="highlight-card glass-card reveal reveal-delay-3">
+          <div class="highlight-icon">🔐</div>
+          <div class="highlight-title">Security & Compliance</div>
+          <div class="highlight-desc">
+            Implemented robust database security frameworks aligned with insurance industry regulations, 
+            protecting sensitive customer and policy data.
+          </div>
+        </div>
+
+        <div class="highlight-card glass-card reveal">
+          <div class="highlight-icon">🚀</div>
+          <div class="highlight-title">Digital Transformation</div>
+          <div class="highlight-desc">
+            Led digital initiatives including online policy management systems and IT infrastructure 
+            upgrades across the organization.
+          </div>
+        </div>
+
+        <div class="highlight-card glass-card reveal reveal-delay-1">
+          <div class="highlight-icon">🤝</div>
+          <div class="highlight-title">Cross-Functional Collaboration</div>
+          <div class="highlight-desc">
+            Partnered with actuarial, underwriting, and finance teams to deliver integrated data 
+            solutions that support business decision-making.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT CTA
+       HOW TO UPDATE: Change the email and social links below.
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2 class="cta-title">Let's Work <span class="text-gradient">Together</span></h2>
+        <p class="cta-desc">
+          Open to new opportunities, collaborations, and interesting database projects. 
+          Based in Kathmandu, Nepal — available for remote work.
+        </p>
+        <div class="cta-buttons">
+          <!-- Update with your email -->
+          <a href="mailto:bisham.silwal@example.com" class="btn btn-primary">Send an Email →</a>
+          <a href="resume.html" class="btn btn-outline">View Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       HOW TO UPDATE: Replace placeholder links with real URLs.
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">BS.</a>
+        <p>Database Administrator & IT Professional based in Kathmandu, Nepal. 
+           Specializing in SQL Server, database optimization, and enterprise IT solutions.</p>
+        <div class="footer-social">
+          <!-- Update these links with your real profiles -->
+          <a href="https://linkedin.com/in/bishamsilwal" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/bishamsilwal" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="mailto:bisham.silwal@example.com" aria-label="Email">@</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="mailto:bisham.silwal@example.com">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <!-- Update with real contact details -->
+          <li><a href="mailto:bisham.silwal@example.com">bisham.silwal@example.com</a></li>
+          <li><a href="tel:+977XXXXXXXXXX">+977 XXXXXXXXXX</a></li>
+          <li><a href="#">Kathmandu, Nepal</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Bisham Silwal. All rights reserved.</span>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

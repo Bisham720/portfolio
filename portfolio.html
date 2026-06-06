@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Bisham Silwal | Projects &amp; Work</title>
+  <meta name="description" content="Portfolio of Bisham Silwal — Database administration, SQL Server performance tuning, website management, and IT infrastructure projects." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bishamsilwal.com.np/portfolio.html" />
+  <meta property="og:title"       content="Portfolio — Bisham Silwal" />
+  <meta property="og:description" content="Browse the professional portfolio and projects of Bisham Silwal." />
+  <meta property="og:url"         content="https://bishamsilwal.com.np/portfolio.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💾</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"  id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <div id="loader">
+    <div class="loader-logo">BS.</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+  <div class="bg-shape bg-shape-3"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo">BS.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="mailto:bisham.silwal@example.com" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <span class="page-hero-label reveal">My Work</span>
+    <h1 class="page-hero-title reveal reveal-delay-1">
+      Project <span class="text-gradient">Portfolio</span>
+    </h1>
+    <p class="page-hero-sub reveal reveal-delay-2">
+      A curated selection of database, IT infrastructure, and web management projects.
+    </p>
+  </div>
+
+  <!-- ============================================================
+       PORTFOLIO PROJECTS
+       HOW TO ADD A PROJECT:
+       1. Copy a .project-card div block below
+       2. Update data-category to one of: database, sql-server, website, it-support
+       3. Update the emoji, title, description, and tech tags
+       4. Optionally add a real image: replace the emoji div with an <img> tag
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="sql-server">SQL Server</button>
+        <button class="filter-btn" data-filter="website">Website</button>
+        <button class="filter-btn" data-filter="it-support">IT Support</button>
+      </div>
+
+      <div class="projects-wrap">
+        <div class="projects-grid">
+
+          <!-- Project 1: Database -->
+          <div class="project-card glass-card reveal" data-category="database">
+            <!-- Project image: replace emoji div with <img src="assets/project-images/project1.jpg" alt="..."> -->
+            <div class="project-img" style="background:linear-gradient(135deg,#0f1729,#1a2d4a);">🗄️</div>
+            <div class="project-body">
+              <div class="project-category">Database</div>
+              <div class="project-title">Insurance Policy Database Overhaul</div>
+              <div class="project-desc">
+                Complete redesign of the insurance policy management database schema at Sun Nepal Life Insurance. 
+                Improved data normalization, reduced redundancy, and enhanced query performance for 500,000+ policy records.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">SQL Server 2019</span>
+                <span class="project-tag">T-SQL</span>
+                <span class="project-tag">Schema Design</span>
+                <span class="project-tag">Data Migration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: SQL Server -->
+          <div class="project-card glass-card reveal reveal-delay-1" data-category="sql-server">
+            <div class="project-img" style="background:linear-gradient(135deg,#0d1f0d,#1a3a1a);">⚡</div>
+            <div class="project-body">
+              <div class="project-category">SQL Server</div>
+              <div class="project-title">Database Performance Optimization</div>
+              <div class="project-desc">
+                Analyzed and optimized slow-running queries in the claims processing module. 
+                Implemented proper indexing strategies and rewrote inefficient stored procedures, 
+                achieving 60% reduction in report generation time.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Query Tuning</span>
+                <span class="project-tag">Execution Plans</span>
+                <span class="project-tag">Index Optimization</span>
+                <span class="project-tag">SSMS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Database -->
+          <div class="project-card glass-card reveal reveal-delay-2" data-category="database">
+            <div class="project-img" style="background:linear-gradient(135deg,#1a0d29,#2d1a4a);">💾</div>
+            <div class="project-body">
+              <div class="project-category">Database</div>
+              <div class="project-title">Automated Backup &amp; Disaster Recovery</div>
+              <div class="project-desc">
+                Designed and implemented an automated backup strategy using SQL Server Agent jobs. 
+                Established full, differential, and transaction log backup schedules with off-site 
+                storage integration, reducing RTO to under 2 hours.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Backup Strategy</span>
+                <span class="project-tag">SQL Agent</span>
+                <span class="project-tag">Disaster Recovery</span>
+                <span class="project-tag">PowerShell</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Website -->
+          <div class="project-card glass-card reveal" data-category="website">
+            <div class="project-img" style="background:linear-gradient(135deg,#0d1a29,#1a2f4a);">🌐</div>
+            <div class="project-body">
+              <div class="project-category">Website</div>
+              <div class="project-title">Corporate Website Content Management</div>
+              <div class="project-desc">
+                Managed and updated the Sun Nepal Life Insurance corporate website, including 
+                policy product pages, agent portals, regulatory disclosures, and digital marketing content. 
+                Improved content structure and SEO performance.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">CMS Management</span>
+                <span class="project-tag">SEO</span>
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">Content Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: SQL Server -->
+          <div class="project-card glass-card reveal reveal-delay-1" data-category="sql-server">
+            <div class="project-img" style="background:linear-gradient(135deg,#1a1409,#2e2210);">📊</div>
+            <div class="project-body">
+              <div class="project-category">SQL Server</div>
+              <div class="project-title">Financial Reporting Dashboard (SSRS)</div>
+              <div class="project-desc">
+                Built a comprehensive SQL Server Reporting Services (SSRS) dashboard for financial 
+                and actuarial teams. Automated premium collection reports, claims analysis, and 
+                policy lapse tracking with scheduled delivery.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">SSRS</span>
+                <span class="project-tag">T-SQL</span>
+                <span class="project-tag">Business Intelligence</span>
+                <span class="project-tag">Report Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: IT Support -->
+          <div class="project-card glass-card reveal reveal-delay-2" data-category="it-support">
+            <div class="project-img" style="background:linear-gradient(135deg,#0d1f1a,#1a3a2e);">🖥️</div>
+            <div class="project-body">
+              <div class="project-category">IT Support</div>
+              <div class="project-title">IT Infrastructure Upgrade Project</div>
+              <div class="project-desc">
+                Led company-wide hardware and software refresh across 80+ workstations. 
+                Coordinated vendor management, deployment scheduling, Active Directory migration, 
+                and end-user training with minimal disruption to business operations.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Active Directory</span>
+                <span class="project-tag">Windows Server</span>
+                <span class="project-tag">Network Setup</span>
+                <span class="project-tag">Vendor Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Database -->
+          <div class="project-card glass-card reveal" data-category="database">
+            <div class="project-img" style="background:linear-gradient(135deg,#1a0d0d,#3a1a1a);">🔐</div>
+            <div class="project-body">
+              <div class="project-category">Database</div>
+              <div class="project-title">Database Security &amp; Compliance Audit</div>
+              <div class="project-desc">
+                Conducted a comprehensive database security assessment covering user access controls, 
+                SQL Server login auditing, data encryption at rest, and regulatory compliance alignment 
+                for insurance data protection requirements.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Security Audit</span>
+                <span class="project-tag">TDE Encryption</span>
+                <span class="project-tag">Role-Based Access</span>
+                <span class="project-tag">Compliance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: IT Support -->
+          <div class="project-card glass-card reveal reveal-delay-1" data-category="it-support">
+            <div class="project-img" style="background:linear-gradient(135deg,#091a29,#102d3f);">📱</div>
+            <div class="project-body">
+              <div class="project-category">IT Support</div>
+              <div class="project-title">SunConnect App UAT &amp; System Testing</div>
+              <div class="project-desc">
+                Performed user acceptance testing for the SunConnect mobile application. 
+                Identified critical bugs including data loss on edit operations, documented 
+                issues systematically, and coordinated fixes with the development team.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">UAT Testing</span>
+                <span class="project-tag">Bug Reporting</span>
+                <span class="project-tag">QA Process</span>
+                <span class="project-tag">Mobile App</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9: Website -->
+          <div class="project-card glass-card reveal reveal-delay-2" data-category="website">
+            <div class="project-img" style="background:linear-gradient(135deg,#0d1929,#1a2e48);">📝</div>
+            <div class="project-body">
+              <div class="project-category">Website</div>
+              <div class="project-title">Digital Policy Portal Content</div>
+              <div class="project-desc">
+                Developed and maintained the online policy product pages and digital forms for 
+                customer self-service. Improved user experience, updated policy descriptions, 
+                premium calculator content, and agent information pages.
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Content Management</span>
+                <span class="project-tag">UX Writing</span>
+                <span class="project-tag">Digital Forms</span>
+                <span class="project-tag">Insurance Portal</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.projects-grid -->
+      </div><!-- /.projects-wrap -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY SECTION
+       HOW TO ADD IMAGES: Replace emoji <div> with <img src="..."> inside .gallery-item
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label reveal">Work Showcase</span>
+      <h2 class="section-title reveal reveal-delay-1">Professional <span>Gallery</span></h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        Screenshots and snapshots from professional work and projects.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- Replace emoji content with actual project screenshots -->
+        <div class="gallery-item reveal">🗄️</div>
+        <div class="gallery-item reveal reveal-delay-1">📊</div>
+        <div class="gallery-item reveal reveal-delay-2">⚡</div>
+        <div class="gallery-item reveal reveal-delay-3">🌐</div>
+        <div class="gallery-item reveal">🔐</div>
+        <div class="gallery-item reveal reveal-delay-1">💾</div>
+        <div class="gallery-item reveal reveal-delay-2">📱</div>
+        <div class="gallery-item reveal reveal-delay-3">🖥️</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2 class="cta-title">Interested in <span class="text-gradient">Working Together?</span></h2>
+        <p class="cta-desc">
+          I am open to database consulting, IT support projects, and full-time opportunities.
+          Let's discuss how I can help your organization.
+        </p>
+        <div class="cta-buttons">
+          <a href="mailto:bisham.silwal@example.com" class="btn btn-primary">Get in Touch →</a>
+          <a href="resume.html" class="btn btn-outline">View Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">BS.</a>
+        <p>Database Administrator &amp; IT Professional based in Kathmandu, Nepal.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/bishamsilwal" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/bishamsilwal" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="mailto:bisham.silwal@example.com" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="mailto:bisham.silwal@example.com">bisham.silwal@example.com</a></li>
+          <li><a href="#">Kathmandu, Nepal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Bisham Silwal. All rights reserved.</span>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
